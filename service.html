@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML service page</title>
+    
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-image: url('bg.jpg');
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#serviceSelection {
+    text-align: center;
+}
+
+#timerSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#timeStatus {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#extendOptions {
+    margin-top: 20px;
+}
+
+#billSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+</style>
+<body>
+
+    <header>
+        <h1>Cyber Cafe Service</h1>
+    </header>
+
+    <main>
+        <!-- Service Selection Section -->
+        <div id="serviceSelection">
+            <h2>Choose a Service</h2>
+            <button id="browseBtn">Browse</button>
+            <button id="printBtn">Print</button>
+        </div>
+
+        <!-- Timer Section (Hidden initially) -->
+        <div id="timerSection" class="hidden">
+            <h2>Browsing Time: <span id="timer">30:00</span></h2>
+            <p id="timeStatus"></p>
+            <div id="extendOptions" class="hidden">
+                <p>Time is low. Would you like to extend your session?</p>
+                <button id="extendYesBtn">Yes</button>
+                <button id="extendNoBtn">No</button>
+            </div>
+        </div>
+
+        <!-- Bill Section (Hidden initially) -->
+        <div id="billSection" class="hidden">
+            <h2>Bill Summary</h2>
+            <p id="billDetails"></p>
+            <button id="payBtn">View Bill</button>
+        </div>
+    </main>
+
+</body>
+</html>

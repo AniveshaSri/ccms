@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML admin page</title>
+    
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+</style>
+<body>
+
+    <header>
+        <h1>Cyber Cafe Admin Panel</h1>
+        
+    </header>
+
+    <main>
+       
+        <section id="userManagement">
+            
+            <h2>User Database</h2>
+            <button id="AddUserBtn"><a href="https://d.docs.live.net/75E938B4EF14BFA2/Desktop/user_database.csv.xlsx">Add New User</a></button>
+            
+                
+        </section>
+
+        <section id="systemControl">
+            <h2>System Control</h2>
+            <button id="shutdownBtn">Shutdown</button>
+            <button id="restartBtn">Restart</button>
+        </section>
+
+       
+        <section id="reports">
+            <h2>System Reports</h2>
+            <button id="generateReportBtn"><a href="https://d.docs.live.net/75e938b4ef14bfa2/Desktop/report.csv.xlsx">Generate Report</a></button>
+            <div id="reportResult"></div>
+        </section>
+    </main>
+</body>
+</html>
